@@ -33,11 +33,11 @@ export default defineComponent({
     IonTitle,
     IonToolbar
   },
-  methods: {
-      ionViewDidEnter: () => {
-          console.log('ion view did enter!');
-      }
-  }
+//   methods: {
+//       ionViewDidEnter: () => {
+//           console.log('ion view did enter!');
+//       }
+//   }
 });
 </script>
 

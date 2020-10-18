@@ -14,7 +14,7 @@
       </ion-header>
 
       <div id="container">
-        <ion-button @click="navigateToPage()">ページ２への遷移</ion-button>
+        <ion-button @click="() => router.push('/page2')">ページ２への遷移</ion-button>
       </div>
     </ion-content>
   </ion-page>
@@ -22,6 +22,7 @@
 
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { useRouter } from 'vue-router';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -33,10 +34,9 @@ export default defineComponent({
     IonTitle,
     IonToolbar
   },
-  methods: {
-    navigateToPage: () => {
-      console.log('navigate to page');
-    }
+  setup() {
+    const router = useRouter();
+    return { router };
   }
 });
 </script>
