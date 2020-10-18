@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Page 2</ion-title>
+        <ion-title>Mock Vue</ion-title>
       </ion-toolbar>
     </ion-header>
 
